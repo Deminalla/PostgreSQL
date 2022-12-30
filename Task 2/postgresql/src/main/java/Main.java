@@ -15,7 +15,9 @@ public class Main {
     public static Connection getConnection() {
         Connection postGresConn = null;
         try {
-            postGresConn = DriverManager.getConnection("jdbc:postgresql://pgsql3.mif/studentu", "deal8003", "GatherInfo100") ;
+            String username = "********"; 
+            String password = "*************"; 
+            postGresConn = DriverManager.getConnection("jdbc:postgresql://pgsql3.mif/studentu", username, password) ;
         }
         catch (SQLException sqle) {
             System.out.println("Nepavyko prisijungti prie duomenu bazes"); // Couldn't connect to database!
