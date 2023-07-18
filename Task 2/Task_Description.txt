@@ -1,9 +1,9 @@
-	1. DB sudaro ne mažiau kaip 4 logiškai pagrįstos lentelės. Lentelės turi visus reikiamus pirminius ir išorinius raktus. 
-	2. DB yra 4-je norminėje formoje.
-	3. Panaudoti bent 3 deklaratyvūs reikalavimai reikšmėms (reikiami apribojimai, check/constraint?), panaudojant skirtingus predikatus. Apibrėžtos bent 2 numatytosios reikšmės (default)
-	4. DB-je apibrėžti bent 2 indeksai, iš kurių bent vienas - unikalus ir bent vienas - ne. 
-	5. DB-je apibrėžtos bent 2 virtualiosios lentelės. 
-	6. DB-je apibrėžta bent 1 materializuota virtualioji lentelė ir jos duomenų atnaujinimo sakinys. 
-	7. DB-je užtikrinamos bent 2 dalykinės taisyklės (ne reikalavimai reikšmėms), apibrėžiamos trigeriais (eilučių numeravimas nėra dalykinė taisyklė).
-	8. Trigeriai naudojami tik tokiems duomenų vientisumo reikalavimams užtikrinti, kurių negalima užtikrinti kitomis SQL priemonėmis.
+1. DB sudaro ne mažiau kaip 4 logiškai pagrįstos lentelės. Lentelės turi visus reikiamus pirminius ir išorinius raktus. 
+2. DB yra 4-je norminėje formoje.
+3. Panaudoti bent 3 deklaratyvūs reikalavimai reikšmėms (reikiami apribojimai, check/constraint?), panaudojant skirtingus predikatus. Apibrėžtos bent 2 numatytosios reikšmės (default)
+4. DB-je apibrėžti bent 2 indeksai, iš kurių bent vienas - unikalus ir bent vienas - ne. 
+5. DB-je apibrėžtos bent 2 virtualiosios lentelės. 
+6. DB-je apibrėžta bent 1 materializuota virtualioji lentelė ir jos duomenų atnaujinimo sakinys. 
+7. DB-je užtikrinamos bent 2 dalykinės taisyklės (ne reikalavimai reikšmėms), apibrėžiamos trigeriais (eilučių numeravimas nėra dalykinė taisyklė).
+8. Trigeriai naudojami tik tokiems duomenų vientisumo reikalavimams užtikrinti, kurių negalima užtikrinti kitomis SQL priemonėmis.
 DB-je yra bent 1 tapatumo požymis (numeris), kuris užtikrinamas automatiškai (stulpelio reikšmės generavimu arba trigeriu).
