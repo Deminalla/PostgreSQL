@@ -6,4 +6,26 @@
 6. DB-je apibrėžta bent 1 materializuota virtualioji lentelė ir jos duomenų atnaujinimo sakinys. 
 7. DB-je užtikrinamos bent 2 dalykinės taisyklės (ne reikalavimai reikšmėms), apibrėžiamos trigeriais (eilučių numeravimas nėra dalykinė taisyklė).
 8. Trigeriai naudojami tik tokiems duomenų vientisumo reikalavimams užtikrinti, kurių negalima užtikrinti kitomis SQL priemonėmis.
-DB-je yra bent 1 tapatumo požymis (numeris), kuris užtikrinamas automatiškai (stulpelio reikšmės generavimu arba trigeriu).
+9. DB-je yra bent 1 tapatumo požymis (numeris), kuris užtikrinamas automatiškai (stulpelio reikšmės generavimu arba trigeriu).
+
+
+1. Bent vienas modulis turi tenkinti vieną šių sąlygų:
+  ○ parašytas C/C++ programavimo kalba, naudojant programų SQL (pakanka vartoti tik statinį SQL),
+  ○ parašytas JAVA progravimo kalba, naudojant JDBC, sąsają, kuri paskaitose nėra išdėstoma pilnai,
+  ○ kitos programavimo kalbos naudojimas turi būti iš anksto suderintas su laboratorinių darbų dėstytoju.
+2. Turi būti realizuotos šios pagrindinės darbo su duomenimis funkcijos (veiksmai):
+  ○ duomenų paieška;
+    § could add more variety, now its just read all
+  ○ duomenų įvedimas;
+  ○ duomenų atnaujinimas (keitimas);
+  ○ duomenų trynimas (šalinimas).
+3. Nebūtina šias funkcijas realizuoti darbui su visais DB duomenimis (lentelėmis), pakanka realizuoti jas tik daliai DB duomenų (lentelių).
+4. Bent viena realizuota funkcija turi naudoti bent 2 tarpusavyje susijusias lenteles.
+  a. not sure what this means, tipo kad lentele priklauso nuo kitu?
+5. Darbo su duomenimis funkcijos turi realizuoti konkrečiai dalykinei sričiai būdingus veiksmus.
+Pvz., yra galima duomenų įvedimo funkcija (veiksmas) "Užregistruoti naują bibliotekos skaitytoją", bet NE "Įvesti naują eilutę į lentelę.."; galima - "Grąžinti paimtą knygą", bet NE "Pakeisti (ar ištrinti) eilutę".
+6. Jei, realizuojant funkcijas, prireikia įvesti tapatumo požymį, kuris neturi aiškios loginės prasmės, pvz. ID, tai prieš požymio reikšmės įvedimą būtina išvesti į ekraną visas jau esamas to požymio reikšmes kartu su prasminių atributų reikšmėmis. Bent viena tokia funkcija turi būti realizuota.
+  a. cia tipo suveiktu sita daryti su imonesNr ar klientoAk?
+7. Bent viena duomenų modifikavimo funkcija turi būti realizuota panaudojant kelis SQL sakinius, t.y. panaudota reali transakcija.
+8. Programa turi būti pakankamai atspari SQL injekcijoms.
+9. Programos vartojo sąsaja turėtų būti tekstine, t.y. grafinė vartotojo sąsaja yra visiškai nereikalinga, bet galima.
